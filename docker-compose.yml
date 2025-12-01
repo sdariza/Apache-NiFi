@@ -1,7 +1,6 @@
 services:
   nifi:
-    image: apache/nifi:latest
-    container_name: nifi
+    build: .
     ports:
       - "8443:8443"
     environment:
